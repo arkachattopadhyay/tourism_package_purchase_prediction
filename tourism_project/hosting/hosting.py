@@ -8,7 +8,7 @@ os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN")
 
 # Define space details
 space_repo_id = "arkac/tourism-package-purchase-prediction-app"
-space_type = "spaces"
+space_type = "space"
 
 api = HfApi(token=os.getenv("HF_TOKEN"))
 
