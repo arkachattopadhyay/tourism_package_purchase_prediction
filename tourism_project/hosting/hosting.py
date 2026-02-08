@@ -8,7 +8,7 @@ os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN")
 
 # Define space details
 space_repo_id = "arkac/tourism-package-purchase-prediction-app"
-space_type = "space"
+space_type = "spaces"
 
 api = HfApi(token=os.getenv("HF_TOKEN"))
 
@@ -18,7 +18,7 @@ try:
     print(f"Space '{space_repo_id}' already exists. Using it.")
 except RepositoryNotFoundError:
     print(f"Space '{space_repo_id}' not found. Creating new space...")
-    create_repo(repo_id=space_repo_id, repo_type=space_type, private=False, space_sdk="streamlit")
+    create_repo(repo_id=space_repo_id, repo_type=space_type, private=False, space_sdk="docker")
     print(f"Space '{space_repo_id}' created.")
 
 # Upload deployment folder to Hugging Face Space
