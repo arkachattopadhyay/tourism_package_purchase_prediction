@@ -15,6 +15,9 @@ import os
 from huggingface_hub import HfApi, create_repo
 from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
 
+# Define Repository Id
+repo_id = "arkac/tourism-package-purchase-prediction-data"
+
 # Load train and test data from Hugging Face
 Xtrain_path = "hf://datasets/" + repo_id + "/Xtrain.csv"
 Xtest_path = "hf://datasets/" + repo_id + "/Xtest.csv"
