@@ -1,4 +1,4 @@
-name: Tourism Package Prediction Pipeline
+name: Tourism Package Purchase Prediction Pipeline
 
 on:
   push:
